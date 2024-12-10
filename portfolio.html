@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Section en tête -->
+  <header class="bg-lime-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-serif hover:text-gray-500">Mon Portfolio</h1>
+      <nav>
+        <ul class=" font-serif flex space-x-4">
+          <li><a href="#accueil" class="hover:text-gray-500">Accueil</a></li>
+          <li><a href="#projets" class="hover:text-gray-500">Projets</a></li>
+          <li><a href="#contact" class="hover:text-gray-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section héros -->
+  <section id="accueil" class="h-screen bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('../portfolio/photo9.jpg'); margin: 40px;">
+    <div class="text-center">
+      <h2 class="text-4xl md:text-6xl font-serif mb-4">Bienvenue sur mon portfolio</h2>
+      <p class=" hover:text-gray-500 text-lg md:text-2xl">je m'appelle Mhadbi Sourour , et je suis passionnee par le developpement web .</p>
+    </div>
+  </section>
+
+  <!-- Section compétences -->
+  <section id="competences" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-serif text-lime-800 text-center mb-8">Mes compétences</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded shadow text-center">
+          <h3 class="text-xl font-serif mb-4">Développement Web</h3>
+          <p>HTML, CSS, JavaScript, Tailwind CSS</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded shadow text-center">
+          <h3 class="text-xl font-serif mb-4">Programmation</h3>
+          <p>Python, Java</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded shadow text-center">
+          <h3 class="text-xl font-serif mb-4">Outils</h3>
+          <p>Git, Docker, Figma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section projets -->
+  <section id="projets" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-serif text-lime-800 text-center mb-8">Mes Projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img src="../portfolio/img2.webp" alt="Projet 1" class="w-full">
+          <div class="bg-lime-100 p-6">
+            <h3 class="text-xl text-lime-700 font-semibold mb-2">Projet 1 : Maison Écologique Moderne</h3>
+            <p><h2 class="font-serif text-xl">Description :</h2> Une maison durable avec des panneaux solaires, de grandes fenêtres en verre et une terrasse en bois. Entourée de verdure, cette habitation moderne allie design et respect de l'environnement.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img src="../portfolio/img4.webp" alt="Projet 2" class="w-full">
+          <div class=" bg-lime-100 p-6">
+            <h3 class="text-xl text-lime-700 font-semibold mb-2">Projet 2 : Parc Urbain Futuriste</h3>
+            <p><h2 class="font-serif text-xl">Description :</h2> Concept innovant de parc urbain avec des passerelles surélevées, des bancs intelligents intégrant des technologies modernes, et une végétation luxuriante. Le cadre est agrémenté d'une vue dynamique sur une métropole en arrière-plan.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow overflow-hidden">
+          <img src="../portfolio/img5.webp" alt="Projet 3" class="w-full">
+          <div class=" bg-lime-100 p-6">
+            <h3 class="text-xl text-lime-700 font-semibold mb-2">Projet 3 : Parc Urbain Futuriste</h3>
+            <p><h2 class="font-serif text-xl">Description :</h2> Un centre communautaire axé sur le respect de l'environnement, avec une cour ouverte, un jardin sur le toit, et des fresques colorées. L'architecture moderne et chaleureuse s'intègre harmonieusement à son environnement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulaire de contact -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-serif text-lime-800 text-center mb-8">Contactez-moi</h2>
+      <form class="max-w-lg mx-auto bg-gray-100 p-6 rounded shadow">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-semibold mb-2">Nom</label>
+          <input type="text" id="name" class="w-full p-3 border rounded" placeholder="Votre nom">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+          <input type="email" id="email" class="w-full p-3 border rounded" placeholder="Votre email">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+          <textarea id="message" class="w-full p-3 border rounded" rows="4" placeholder="Votre message"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-lime-600  text-white py-6">
+    <div class="container mx-auto text-center">
+      <p class="mb-4">&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#" class="hover:text-gray-400">Facebook</a>
+        <a href="#" class="hover:text-gray-400">Twitter</a>
+        <a href="#" class="hover:text-gray-400">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
